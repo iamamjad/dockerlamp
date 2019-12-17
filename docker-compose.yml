@@ -9,7 +9,7 @@ services:
           - .:/application
         restart: always
         environment:
-          - MYSQL_ROOT_PASSWORD=.root.
+          - MYSQL_ROOT_PASSWORD= root
           - MYSQL_DATABASE=docker_db
 
         ports:
@@ -21,7 +21,7 @@ services:
     build:
       context: ./
     volumes:
-      - /Users/dbis/Desktop/aspendigital/src:/var/www/html/
+      - /Directory/src:/var/www/html/
     ports:
       - 8000:80
     depends_on:
